@@ -3,6 +3,10 @@
 
 # Keep git control files.
 !.gitignore
+!README.md
+!AGENTS.md
+!health-check.sh
+!run-coderabbit.sh
 
 # Keep only agent instruction content for review.
 !companies/
