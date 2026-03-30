@@ -1,10 +1,24 @@
+# Default: ignore everything in this runtime instance.
+*
+
+# Keep git control files.
+!.gitignore
+
+# Keep only agent instruction content for review.
+!companies/
+companies/*
+!companies/*/agents/
+companies/*/agents/*
+!companies/*/agents/*/instructions/
+!companies/*/agents/*/instructions/**
+
+# Explicitly ignore runtime/heavy/sensitive trees.
 .env
 secrets/
 db/
 logs/
-data/run-logs/
-data/uploads/
-data/cache/
-*.sqlite
-*.sqlite3
-*.db
+data/
+projects/
+workspaces/
+companies/*/codex-home/
+companies/*/codex-home/**
