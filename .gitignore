@@ -1,0 +1,10 @@
+.env
+secrets/
+db/
+logs/
+data/run-logs/
+data/uploads/
+data/cache/
+*.sqlite
+*.sqlite3
+*.db
